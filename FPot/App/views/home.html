@@ -1,0 +1,7 @@
+﻿<div>
+
+    <div class="search"><input type="text" id="search" width="400px" /><input id="btnSearch" type="button" class="btn btn-primary" value="Search" data-bind="click: search" /></div>
+    <div class="list-group" data-bind="foreach: days">
+        <a class="list-group-item" data-bind="text: day,css:{'active': $parent.activeDate() == date},click: $parent.select"></a>
+    </div>
+</div>
