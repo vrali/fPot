@@ -1,7 +1,27 @@
 ﻿<div>
 
-    <div class="search"><input type="text" id="search" width="400px" /><input id="btnSearch" type="button" class="btn btn-primary" value="Search" data-bind="click: search" /></div>
-    <div class="list-group" data-bind="foreach: days">
-        <a class="list-group-item" data-bind="text: day,css:{'active': $parent.activeDate() == date},click: $parent.select"></a>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            Pick a Date:
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    <span data-bind="text: selectedDate"></span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" data-bind="foreach: days">
+                    <li role="presentation"><a class="list-group-item" data-bind="text: formattedDate,css:{'active': $parent.selectedDate() == formattedDate},click: $parent.select"></a></li>
+                </ul>
+            </div>
+           <!-- <select id="dateSelect" data-bind="options: days, optionsText: 'formattedDate', value: selectedDate"></select>-->
+            <!--Selected Date: <span data-bind="text: selectedDate"></span>--><div style="position: relative "><input type="text" id="search" class="form-control search" style="display: inline;width:auto" /><input id="btnSearch" type="button" class="btn btn-primary" value="Search" data-bind="click: search" /></div>
+        </div>
+        <div class="col-md-1"></div>
     </div>
+    <!--<div class="list-group" data-bind="foreach: days">
+        <a class="list-group-item" data-bind="text: formattedDate,css:{'active': $parent.selectedDate() == formattedDate},click: $parent.select"></a>
+    </div>-->
+
+
+
 </div>

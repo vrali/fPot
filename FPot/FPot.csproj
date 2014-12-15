@@ -113,7 +113,6 @@
     <Content Include="App\views\detail.html" />
     <Content Include="App\views\flickr.html" />
     <Content Include="App\views\home.html" />
-    <Content Include="App\views\ListControl.html" />
     <Content Include="App\views\shell.html" />
     <Content Include="App\views\welcome.html" />
     <Content Include="Content\bootstrap-theme.css" />
