@@ -15,7 +15,7 @@ define(['durandal/system', 'durandal/app', 'durandal/viewLocator'],  function (s
     system.debug(true);
     //>>excludeEnd("build");
 
-    app.title = 'Product Basket';
+    app.title = 'Customer Goodie';
 
     app.configurePlugins({
         router: true,

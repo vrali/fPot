@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" data-bind="attr: { href: router.navigationModel()[0].hash }">
-                <i class="fa fa-home"></i>Basket
+                <i class="fa fa-home"></i>Customer Goodie
             </a>
         </div>
         <div class="navbar-collapse collapse">
@@ -17,10 +17,13 @@
                     <a data-bind="attr: { href: hash }, html: title"></a>
                 </li>
             </ul>
-            <!--<div class="loader nav navbar-nav navbar-right" data-bind="css: { active: router.isNavigating }">
+            <div class="loader nav navbar-nav navbar-right" data-bind="css: { active: router.isNavigating }">
                 <i class="fa fa-spinner fa-spin fa-2x active"></i>
-            </div>-->
-            <!--<div class="search pull-right"><input type="text"/><input type="button" class="btn" value="Search" data-bind="click: search"/></div>-->
+            </div>
+            <div class="search pull-right" data-bind="compose: 'viewmodels/search'">                
+               <!--<input type="text" />-->
+                <!--<input type="button" class="btn" value="Search" data-bind="click: search" />-->
+            </div>
         </div>
     </div>
 
